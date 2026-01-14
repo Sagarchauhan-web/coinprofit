@@ -38,7 +38,7 @@ export async function fetcher<T>(
       .json()
       .catch(() => ({}));
 
-    console.log(errorBody);
+    console.log(errorBody, 'errorBody');
 
     throw new Error(
       `API Error: ${response.status}: ${
